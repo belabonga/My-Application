@@ -50,7 +50,10 @@ public class MainActivity extends AppCompatActivity {
     private void doProcess() {
         if (isValid()) {
             String nama = etNama.getText().toString();
-            tvHasil.setText("Nama   :  " + nama);
+            String tempat = etTempat.getText().toString();
+            int tahun = Integer.parseInt(etTahun.getText().toString());
+            int usia = 2016 - tahun;
+            tvHasil.setText("Nama   :  " + nama + "\n" + "Usia  :  " + tempat);
         }
     }
 
