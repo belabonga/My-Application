@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             String tempat = etTempat.getText().toString();
             int tahun = Integer.parseInt(etTahun.getText().toString());
             int usia = 2016 - tahun;
-            tvHasil.setText("Nama   :  " + nama + "\n" + "Usia  :  " + tempat);
+            tvHasil.setText("Nama    :  " + nama + "\n" + "Tempat Lahir  :  " + tempat + "\n" + "Usia  :  " + usia);
         }
     }
 
