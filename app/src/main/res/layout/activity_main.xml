@@ -34,7 +34,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView" />
+            android:layout_below="@+id/textView"
+            android:hint="Shania Asti Mafaza" />
 
         <TextView
             android:id="@+id/textView3"
@@ -49,7 +50,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_below="@+id/textView3" />
+            android:layout_below="@+id/textView3"
+            android:hint="Malang" />
 
         <TextView
             android:id="@+id/textView4"
@@ -64,12 +66,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/textView4" />
+            android:layout_below="@+id/textView4"
+            android:hint="1998" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/spinnerKelas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:entries="@array/Kelas"
             android:spinnerMode="dropdown" />
 
         <TextView

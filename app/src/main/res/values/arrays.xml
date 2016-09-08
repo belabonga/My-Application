@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Kelas">
+        <item>X RPL 1</item>
+        <item>X RPL 2</item>
+        <item>X RPL 3</item>
+        <item>X RPL 4</item>
+        <item>X RPL 5</item>
+        <item>X RPL 6</item>
+        <item>X TKJ 1</item>
+        <item>X TKJ 2</item>
+        <item>X TKJ 3</item>
+        <item>X TKJ 4</item>
+        <item>X TKJ 5</item>
+        <item>X TKJ 6</item>
+
+        <item>XI RPL 1</item>
+        <item>XI RPL 2</item>
+        <item>XI RPL 3</item>
+        <item>XI RPL 4</item>
+        <item>XI RPL 5</item>
+        <item>XI RPL 6</item>
+        <item>XI TKJ 1</item>
+        <item>XI TKJ 2</item>
+        <item>XI TKJ 3</item>
+        <item>XI TKJ 4</item>
+        <item>XI TKJ 5</item>
+
+        <item>XII RPL 1</item>
+        <item>XII RPL 2</item>
+        <item>XII RPL 3</item>
+        <item>XII RPL 4</item>
+        <item>XII RPL 5</item>
+        <item>XII TKJ 1</item>
+        <item>XII TKJ 2</item>
+        <item>XII TKJ 3</item>
+        <item>XII TKJ 4</item>
+
+    </string-array>
+</resources>
