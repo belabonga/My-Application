@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,7 +16,8 @@ public class MainActivity extends AppCompatActivity {
     EditText etTempat, etTahun;
     EditText etNama;
     Button bSubmit;
-    RadioButton rbKK, rbRS, rbROT;
+    RadioGroup rgTempatTinggal;
+    // RadioButton rbKK, rbRS, rbROT;
     CheckBox cbP, cbNP, cbTSS;
 
     @Override
@@ -31,9 +33,11 @@ public class MainActivity extends AppCompatActivity {
 
         bSubmit = (Button) findViewById(R.id.buttonSubmit);
 
-        rbKK = (RadioButton) findViewById(R.id.radioButtonKK);
+    /*    rbKK = (RadioButton) findViewById(R.id.radioButtonKK);
         rbROT = (RadioButton) findViewById(R.id.radioButtonROT);
-        rbRS = (RadioButton) findViewById(R.id.radioButtonRS);
+        rbRS = (RadioButton) findViewById(R.id.radioButtonRS); */
+
+        rgTempatTinggal = (RadioGroup) findViewById(R.id.radioGroupTT);
 
         cbNP = (CheckBox) findViewById(R.id.checkBoxNP);
         cbP = (CheckBox) findViewById(R.id.checkBoxP);
@@ -45,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 doProcess();
             }
         });
+
     }
 
     private void doProcess() {
@@ -53,7 +58,20 @@ public class MainActivity extends AppCompatActivity {
             String tempat = etTempat.getText().toString();
             int tahun = Integer.parseInt(etTahun.getText().toString());
             int usia = 2016 - tahun;
-            tvHasil.setText("Nama    :  " + nama + "\n" + "Tempat Lahir  :  " + tempat + "\n" + "Usia  :  " + usia);
+
+            String TempatTinggal = "Tempat Tinggal :  ";
+            int tt = TempatTinggal.length();
+            if (rgTempatTinggal.getCheckedRadioButtonId() != -1) {
+                RadioButton rb = (RadioButton)
+                        findViewById(rgTempatTinggal.getCheckedRadioButtonId());
+                TempatTinggal += rb.getText().toString() + "\n";
+            }
+
+            if (TempatTinggal.length() == tt) {
+                TempatTinggal += "Anda belum memilih tempat tinggal \n ";
+            }
+
+            tvHasil.setText("Nama    :  " + nama + "\n" + "Tempat Lahir  :  " + tempat + "\n" + "Usia  :  " + usia + "\n" + TempatTinggal);
         }
     }
 
